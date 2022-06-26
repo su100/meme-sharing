@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { mobile } from 'styles/theme';
 import Header from './Header';
-import Sidebar from './SideBar';
 import Footer from './Footer';
 
 interface Props {
@@ -15,7 +14,6 @@ function Layout({ children }: Props) {
       <Header />
       <Main>{children}</Main>
       <Footer />
-      <Sidebar />
     </>
   );
 }
